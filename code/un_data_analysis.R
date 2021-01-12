@@ -136,3 +136,5 @@ ggplot(data = gap_co2_region) +
   labs(x = "GDP Per Capita", y = "CO2 emissions") +
   geom_point()
 
+# data output
+write_csv(gap_co2_region, "data/gapminder_co2.csv")
